@@ -4,15 +4,38 @@
 <head>
     <!-- deleted "/" and extra space -->
     <meta charset="UTF-8">
-    <!-- Link to external stye sheet ./assets.css.style.css with updated code that has styles consolidated by same attributes -->
+    <!-- Link to external stye sheet ./assets.css.style.css with updated code that has styles consolidated by same attributes and arranged by page flow -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- <title> updated from "website" to reflect the content of the page in order to assist screen reader users and SEO functionality  --> 
     <title>Horiseon Social Solution Services, Inc.</title>
 </head>
-
 <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+        </script>
     <!-- <div class> changed to <header class> to indicate header of page for semantics' purposes with the intent of aiding screen reader users and SEO functionality -->
     <header class="header">
+        <!-- Skip-link to benefits added to increase keyboard accewsbility and user flow -->
+        <a class="skip-link" href='#aside'>Skip to benefits</a>
          <!-- Anchor link created to the index.html on the Horiseon company name to increase keyboard accesbility and user flow -->
          <!-- <span> changed to <presentation aria-roledescription> for screen reader users -->
         <h1><a href="index.html">Hori<presentation aria-roledescription="decorative" class="seo">seo</presentation>n</h1></a>
@@ -28,7 +51,7 @@
         </nav>
         <!-- </div> changed to </header> for semantic sense for screen reader visitors and SEO purposes -->     
         </header>
-    <!-- <div class="hero"> expanded to <div role="img" title="people discussing SEO at table" to add description of hero image for screen reader visitors and SEO purposes -->    
+    <!-- <div class="hero"> expanded to <div role="img" title="four people discussing SEO at table" to add description of hero image for screen reader visitors and SEO purposes -->    
     <div role="img" title="people discussing SEO at table" class="hero-image"></div>
     <!-- <div class> changed to <section class> for semantic sense for screen reader visitors and SEO purposes -->  
     <section class="content">
@@ -67,34 +90,53 @@
         <!-- </div> updated to </section> -->   
         </section>
         <!-- </div> updated to </section> --> 
-        </section>  
-    <div class="benefits">
-        <div class="benefit-lead">
+        </section>
+       <!-- <div class> changed to <aside id="aside" class> for semantic sense for screen reader visitors and SEO purposes -->      
+       <aside id="aside" class="benefits">
+       <!-- <div class> changed to <aside class> for semantic sense for screen reader visitors and SEO purposes -->     
+        <aside class="benefit-lead">
             <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
+            <!-- alt description added for screen reader visitors and SEO purposes -->  
+            <!-- "/" and extra space deleted for proper formatting --> 
+            <img src="./assets/images/lead-generation.png" alt="lead generation icon">
             <p>
                 Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-        <div class="benefit-brand">
+            </p>                    
+        <!-- </div> changed to </aside> -->     
+        </aside>
+        <!-- <div class> changed to <aside class> for semantic sense for screen reader visitors and SEO purposes -->     
+        <aside class="benefit-brand">
             <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
+            <!-- alt description added for screen reader visitors and SEO purposes -->  
+            <!-- "/" and extra space deleted for proper formatting -->
+            <img src="./assets/images/brand-awareness.png" alt="brand awareness icon">
             <p>
                 Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
             </p>
-        </div>
-        <div class="benefit-cost">
+        <!-- </div> changed to </aside> -->   
+        </aside>
+       <!-- <div class> changed to <aside class> for semantic sense for screen reader visitors and SEO purposes -->      
+        <aside class="benefit-cost">
             <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png"></img>
+            <!-- alt description added for screen reader visitors and SEO purposes -->  
+            <!-- </img> deleted for proper formatting -->
+            <img src="./assets/images/cost-management.png" alt="cost management icon">
             <p>
                 As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
             </p>
-        </div>
-    </div>
+      <!-- </div> changed to </aside> -->   
+        </aside>
+       <!-- </div> changed to </aside> -->   
+        </aside>
+    <!-- <div class> changed to <footer class>  -->  
+     <!-- <h2> and </h2> removed and font changed to 20px with CSS styling to uphold semantics -->            
     <footer class="footer1">
         Made with ❤️️ by
+    <!-- <footer class="footer2" added to customize font size -->    
     <footer class="footer2">
         &copy; 2020 Horiseon Social Solution Services, Inc.
-        </footer>
+    <!-- </div> replaced by </footer> to continue semantic flow -->     
+    </footer>
 </body>
+
 </html>     
