@@ -1,48 +1,73 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-us">
+
 <head>
+    <!-- deleted "/" and extra space -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initital-scale=1">
+    <!-- Link to external stye sheet ./assets.css.style.css with updated code that has styles consolidated by same attributes -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <title> updated from "website" to reflect the content of the page in order to assist screen reader users and SEO functionality  --> 
     <title>Horiseon Social Solution Services, Inc.</title>
-    
-    <meta name="description" content="Horiseon provides Search Engine Optimization (SEO), Online Reputation Management and social media marketing so you can increase your visibility and brand recognition to increase your lead generation and decrease your advertising costs.">
 </head>
+
 <body>
+    <!-- <div class> changed to <header class> to indicate header of page for semantics' purposes with the intent of aiding screen reader users and SEO functionality -->
     <header class="header">
-        <h1><a href="index.html">Hori<em></em><span class="seo">seo</span></em>n</h1></a>
-            <nav>
-            <ul>
+         <!-- Anchor link created to the index.html on the Horiseon company name to increase keyboard accesbility and user flow -->
+         <!-- <span> changed to <presentation aria-roledescription> for screen reader users -->
+        <h1><a href="index.html">Hori<presentation aria-roledescription="decorative" class="seo">seo</presentation>n</h1></a>
+        <!-- <div> changed to <nav> for semantic sense for screen reader visitors and SEO purposes -->   
+        <nav>
+           <ul>
+                <!-- Lines 22-26 <li> and </li> realigned for proper placement -->     
                 <li><a href="#search-engine-optimization">Search Engine Optimization</a></li>
                 <li><a href="#online-reputation-management">Online Reputation Management</a></li>
                 <li><a href="#social-media-marketing">Social Media Marketing</a></li>
             </ul>
+        <!-- </div> changed to </nav> for semantic sense for screen reader visitors and SEO purposes -->     
         </nav>
+        <!-- </div> changed to </header> for semantic sense for screen reader visitors and SEO purposes -->     
         </header>
-    <div class="hero-image"></div>
-    <div class="content">
-        <div id="search-engine-optimization" class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+    <!-- <div class="hero"> expanded to <div role="img" title="people discussing SEO at table" to add description of hero image for screen reader visitors and SEO purposes -->    
+    <div role="img" title="people discussing SEO at table" class="hero-image"></div>
+    <!-- <div class> changed to <section class> for semantic sense for screen reader visitors and SEO purposes -->  
+    <section class="content">
+        <!-- <div id> changed to <section class> for semantic sense for screen reader visitors and SEO purposes -->  
+        <!-- <class="search-engine-optimation"> added to fix header nav link and CSS styling -->
+        <section id="search-engine-optimization" class="search-engine-optimization">
+            <!-- alt image descripton added for screen reader users and SEO -->
+            <!-- "/" and extra space deleted for proper formatting -->    
+            <img src="./assets/images/search-engine-optimization.jpg" alt="notebook on desk with SEO strategies drawn on page" class="float-left">
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
-        </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+        <!-- </div> updated to </section> -->    
+        </section>
+        <!-- <div id> changed to <section id> for semantic sense for screen reader visitors and SEO purposes -->  
+        <section id="online-reputation-management" class="online-reputation-management">
+            <!-- alt image descripton added for screen reader users and SEO -->
+            <!-- "/" and extra space deleted for proper formatting --> 
+            <img src="./assets/images/online-reputation-management.jpg" alt="graph on a laptop depicting online reputation increasing" class="float-right">
             <h2>Online Reputation Management</h2>
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
-        </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+        <!-- </div> updated to </section> -->      
+        </section>
+        <!-- <div id> changed to <section id> for semantic sense for screen reader visitors and SEO purposes -->  
+        <section id="social-media-marketing" class="social-media-marketing">
+            <!-- alt image descripton added for screen reader users and SEO -->
+            <!-- "/" and extra space deleted for proper formatting --> 
+            <img src="./assets/images/social-media-marketing.jpg" alt="people gathered around table with social media buzz words on speech bubbles" class="float-left">
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
-        </div>
-    </div>
+        <!-- </div> updated to </section> -->   
+        </section>
+        <!-- </div> updated to </section> --> 
+        </section>  
     <div class="benefits">
         <div class="benefit-lead">
             <h3>Lead Generation</h3>
@@ -68,10 +93,8 @@
     </div>
     <footer class="footer1">
         Made with ❤️️ by
-        <div id="footer" class="footer2">
-        &copy; 2019 Horiseon Social Solution Services, Inc.
-        
-        </div>
+    <footer class="footer2">
+        &copy; 2020 Horiseon Social Solution Services, Inc.
         </footer>
 </body>
 </html>     
